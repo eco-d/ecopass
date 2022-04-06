@@ -1,0 +1,85 @@
+/* DIVS */
+.setter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder{
+    position: relative;
+    height: 99.5%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+}
+
+.gaynor{
+    width: 350px;
+    height: 350px;
+    background-image: url("imgs/gaynor.png");
+    background-repeat: no-repeat;
+}
+
+/* TEXT */
+.title {
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 3rem;
+    color: rgb(18, 70, 18);
+}
+
+.subtitle{
+    font-family: cursive;
+    font-size: 1.25rem;
+    color: dodgerblue;
+}
+
+.password-text{
+    font-size: 2rem;
+    padding: 2px;
+    margin: 1px;
+}
+
+/* UTIL */
+
+#getpass{
+    display: inline;
+}
+
+#showpass{
+    display: none;
+}
+
+.reset {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.reset:hover {
+	background-color:#5cbf2a;
+}
+.reset:active {
+	position:relative;
+	top:1px;
+}
+
+body{
+    background-color: rgb(141, 194, 196);
+}
