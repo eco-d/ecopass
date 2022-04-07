@@ -1,3 +1,11 @@
+function copyPassword(){
+    var pass = document.getElementById("password");
+
+    navigator.clipboard.writeText(pass.textContent);
+
+    alert("Copied password: " + pass.textContent);
+}
+
 function calc() {
     var lower = "qwertyuiopasdfghjklzxcvbnm";
     var upper = "MNBVCXZLKJHGFDSAPOIUYTREWQ";
@@ -61,6 +69,16 @@ function clrChgr() {
     }, 175);
 }
 
+function chomp() {
+    $("#getpass").css("display", "inline");
+    $("#showpass").css("display", "none");
+    calc();
+    setTimeout(function () {
+        $("#getpass").css("display", "none");
+        $("#showpass").css("display", "inline");
+    }, 200); 
+}
+
 window.onload = function () {
     clrChgr();
 }
@@ -71,7 +89,14 @@ $("#generate-password").click(function () {
     $("#showpass").css("display", "inline");
 });
 
-$("#reset-password").click(function () {
-    $("#showpass").css("display", "none");
-    $("#getpass").css("display", "inline");
+$("#copy-password").click(function () {
+    copyPassword();
 });
+
+$("#gt").click(function () {
+    chomp();
+});
+
+$("#gb").click(function () {
+    chomp();
+})
