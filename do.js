@@ -70,8 +70,11 @@ function clrChgr() {
 }
 
 function chomp() {
+    var audio = new Audio('sounds/chomp-1.mp3');
+
     $("#getpass").css("display", "inline");
     $("#showpass").css("display", "none");
+    audio.play();
     calc();
     setTimeout(function () {
         $("#getpass").css("display", "none");
