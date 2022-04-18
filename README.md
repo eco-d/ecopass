@@ -1,2 +1,2 @@
 # EcoPass
-get a password
+[get a password!](https://eco-d.github.io/ecopass/)
